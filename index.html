@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz Demo</title>
+    <link rel="stylesheet" type="text/css" href="css.css" />
+</head>
+
+<body>
+    <!-- create the header that contains the user score and the timer -->
+    <header>
+        <div id="logo">
+            <h1>Javascript Quiz Game!</h1>
+        </div>
+        <div id="timer">100</div>
+
+    </header>
+
+    <div class="container">
+        <div id="question-area">
+            <!-- Intro Text -->
+            <div id="intro">
+                <h2>Quiz Game</h2>
+                <p>Try to answer all of the following questions before time runs out. If you guess wrong, time is
+                    subtracted from the clock. When all questions are answered, or the timer reaches 0, the game is
+                    over. Good luck!</p>
+            </div>
+
+            <button id="start-button">Start!</button>
+            <!-- div to contain the question text -->
+            <div id="question" class="hide">Questions will be displayed here</div>
+            <!-- div to contain the buttons for choices -->
+            <div id="answer-buttons" class="hide">
+                <button class="button" id="button-one">Answer 1</button>
+                <button class="button" id="button-two">Answer 2</button>
+                <button class="button" id="button-three">Answer 3</button>
+                <button class="button" id="button-four">Answer 4</button>
+            </div>
+            <div id="feedback" class="hide">This will let you know whether you are right or wrong</div>
+
+        </div>
+
+
+
+
+        <div class = "hide" id=high-scores >
+            <h2>Save Your High Scores</h2>
+           
+                <div class="input-group">
+                
+                    <p id="user-score"></p>
+                    <p>Enter your Initials to save your score</p>
+                    <input type="text" name="name" id="name"/>
+                </div>
+                <button id="save-button">Save!</button>
+        </div>
+    </div>
+
+        <p id="saved-scores" class = "hidden"></p>
+    <!--Link to JavaScript file-->
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>
